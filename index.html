@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <title>Decodificador Desafio</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <main class="conteudo">
+        <figure class="conteudo__figuras">
+            <img class="conteudo__figuras__logo" src="./assents/logo-alura.png" alt="Logo alura">
+        </figure>
+        <section class="conteudo__cripto">
+            <textarea name="texto" id="conteudo__cripto_caixa" onfocus="limparTexto(this)" onblur="reporTexto(this)">Digite sua mensagem!</textarea>
+            <div class="conteudo__cripto_info">
+                <p class="conteudo__cripto_info__text"><img class="conteudo__cripto_info__img" src="./assents/exclamacao.png" alt="exclamacao logo">Apenas letras minúsculas e sem acento.</p>
+                <div class="conteudo__cripto__info__butao">
+                    <button class="butao__crip" onclick="criptografar()">Criptografar</button>
+                    <button class="butao__descrip" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo__mostra">
+            <img id="conteudo__mostra__img" src="./assents/pessoa com lupa.png" alt="pessoa com lupa">
+            <div id="conteudo__mostra__informacao">
+                <h1 class="conteudo__mostra__informacao__subtitulo">Nenhuma mensagem encontrada</h1>
+                <p class="conteudo__mostra__informacao__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="conteudo__mostra__alt">
+                <textarea id="conteudo__mostra__resultado" disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</textarea>
+                <button id="conteudo__mostra__copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h2 class="rodape__h2">Desenvolvido por Lucas Gabriel Lourenço</h2>
+        <div class="rodape__icone">
+            <a class="" href="https://github.com/zLxx7z"><img src="assents/github.png" alt="Icone GitHub"></a>
+        </div>
+    </footer>
+   
+</body>
+</html>
+
+
